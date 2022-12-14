@@ -7,34 +7,32 @@ const pizzaBaseList = document.querySelectorAll('.pizza-base-container img');
 const ingredientsList = document.querySelectorAll('.pizza-ingredients-container img');
 const instruction = document.querySelector('.instruction');
 const reload = document.querySelector('.pizza-reset img');
-console.log(ingredientsList);
+// console.log(ingredientsList);
 
 
 let draggedElement;
 
 pizzaBaseList.forEach((item)=>{
    item.addEventListener('dragstart',(event)=>{
-    draggedElement=event.target;
-    console.log(draggedElement) })
+    draggedElement=event.target; })
 })
 
 ingredientsList.forEach((item)=>{
     item.addEventListener('dragstart',(event)=>{
-     draggedElement=event.target;
-     console.log(draggedElement) })
+     draggedElement=event.target; })
  })
 
 
 
 pizzaContainer.addEventListener('dragover',(event)=>{
     event.preventDefault();
-    console.log('dragover');
+    // console.log('dragover');
 })
 
 pizzaContainer.addEventListener('drop',()=>{
     let tempElement= draggedElement.cloneNode(true);
     pizzaContainer.appendChild(tempElement);
-    console.log('drop');
+    // console.log('drop');
     pizzaBaseContainer.classList.add('hidden');
     pizzaIngredientsContainer.classList.add('show');
     console.log(instruction)
