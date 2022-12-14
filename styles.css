@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    cursor: pointer;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f1f5f8;
+    /* margin:2rem; */
+}
+
+.pizza-reset{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.pizza-reset img{
+    position: absolute;
+    right:0;
+   height:2rem;
+   width:2rem;
+}
+
+.reset:hover{
+    color:rgb(199, 44, 44);
+}
+
+.pizza{
+    width: 20rem;
+    height: 18rem;
+    border-radius:50%;
+    background: white;
+    /* border: 1px solid #aaaaaa; */
+     display:flex;
+    justify-content: center;
+    align-items: center;  
+    position:relative;
+    font-size: 2rem;
+    margin-top:1rem;
+    color: #1d4ed8;
+}
+
+
+
+.pizza img{
+  
+    width: 18rem;
+    height: 16rem;
+    border-radius:50%;
+    position: absolute;
+    top:0;
+    left:1rem;
+}
+
+.pizza-base-container{
+    display:flex;
+    justify-content: center;
+    align-item:center;
+    width:80vw;
+    margin:2rem;
+}
+
+.pizza-base{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+}
+
+.pizza-base img{
+    height:8rem;
+    width:8rem;
+    border-radius:50%;
+    padding:2rem 2rem 0rem 2rem;
+}
+
+.pizza-base p{
+    padding-top:1rem;
+    font-weight:bold;
+}
+
+.pizza-ingredients-container{
+    display:flex;
+    justify-content: center;
+    align-item:center;
+    width:80vw;
+    margin:2rem;
+    display:none;
+}
+
+.pizza-ingredients{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+}
+.pizza-ingredients img{
+    height:8rem;
+    width:8rem;
+    padding:2rem;
+}
+
+.pizza-ingredients p{
+    padding-top:1rem;
+    font-weight:bold;
+}
+
+
+.hidden{
+    display:none;
+}
+
+.show{
+    display:flex;
+}
+
+.instruction{
+    padding:1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color:#1d4ed8;
+}
+
+
+@media(min-width:700px){
+    .pizza{
+        width:22rem;
+        height:22rem;   
+    }
+   
+.pizza-reset img{
+   top:1rem;
+}
+    
+.pizza img{
+    width: 20rem;
+    height: 20rem;
+}
+
+    .pizza-base img{
+        height:13rem;
+        width:13rem;
+        padding:2rem 2rem 0rem 2rem;
+    }
+
+    
+    .pizza-ingredients img{
+        height:13rem;
+        width:13rem;
+        padding:2rem 2rem 0rem 2rem;
+    }
+}
